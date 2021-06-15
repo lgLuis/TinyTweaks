@@ -1,0 +1,57 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+ }
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root{
+    --principal:#ffffc7;
+    --secundaria:#233e8b;
+    --verde:#a9f1df;
+    --verdeAgua:#1eae98;
+    --fuentePpal:'Baloo Tammudu 2', cursive;
+}
+
+body{
+    font-family: var(--fuentePpal);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+img{max-width: 100%;}
+h1{font-size: 4rem;}
+h2{font-size: 3.2rem;}
+p{font-size: 2rem;}
+
+.contenedor{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.entrada-blog a{
+    display: inline-block;
+    background-color: var(--principal);
+    color: var(--secundaria);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1{
+    text-align: center;
+    font-size: 12rem;
+}
+
+@media(min-width:768px){
+    h1{
+        font-size: 2rem;
+        text-align: left;
+    }    
+}
